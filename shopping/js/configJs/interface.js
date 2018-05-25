@@ -1,0 +1,72 @@
+define(function(require, exports, module) {  
+	module.exports = {
+			//0授权
+			power:'v1/api/wechatlogin',
+			//1获取养老院列表
+			beadhouse_url:'v1/institutions/institutions_list',
+			//2获取养老院详情接口 
+			beadhouse_detail_url: 'v1/institutions/resthome_detail',
+			//4筛选查询养老院接口
+  			filter_url:'v1/institutions/getsearch_list',
+			//6收藏接口
+			collection_url:'v1/institutions/favorite',
+			//11获取旅居养老类别
+			gettourismlist_url:'v1/institutions/living',
+			//12获取合作城市养老列表接口
+			getCooperate_url:'v1/institutions/cooperate',
+			//3获取筛选列表接口
+			filter_list_url: 'v1/category/category_list',
+			//21获取评价信息
+			getEvaluate_url:'v1/institutions/comment_list',
+			//15获取老人信息列表
+			getOldList_url:'v1/elder/getelder_info',
+			//16删除老人信息
+			deleteOldInfo_url:'v1/elder/delelder',
+			//8添加老人信息接口
+			addMan_url:'v1/elder/sub_elder',
+			 //10获取附近地图上的养老院信息
+  			getBeadhouseMap_url:'v1/institutions/nearbeadhome',
+			//29获取与老人关系
+			ralition_url:'v1/elder/getrelation',
+			//3获取wxjsdk验证
+			jsdk_url:'v1/api/share',
+			//7获取手机验证码接口
+			sendmsg_url:'v1/api/send_sms',
+			//绑定用户手机号
+			bindPhone_url:'v1/api/wechat_blind',
+			//22获取精彩图集
+ 			 getWonderfulArtlas_url:'v1/institutions/atlas',
+ 			 //17下单前获取养老院信息
+  			confirmBefore_url:'v1/institutions/try_live',
+  			//18下单
+  			confirmOrder_url:'v1/order/tmp_live',
+  			//24订单支付
+  			orderPay_url:'v1/order/wechatpay',
+  			//32查看当前用户的收藏状态
+  			collectStatue_url:'v1/institutions/getfavo_status',
+  			//13预约参观接口
+ 			visit_url: 'v1/institutions/visit',
+ 			//14获取我的参观列表接口
+  			my_visit_url: 'v1/user/my_visit',
+  			 //9获取用户基本信息接口
+  			getUserInfo_url:'v1/user/user_info',
+  			  //19我的收藏列表
+  			myFavoriteList_url:'v1/user/my_favo',
+  			//20我的预约
+ 			 myLive_url:'v1/user/my_live',
+ 			 //25申请入驻补贴
+  			applySubsidies_url:'v1/institutions/subsidy',
+ 			 //30获取订单详情
+  			orderDetail_url:'v1/order/order_detail',
+  			 //27立即评价房间信息
+  			getLiveInfo_url:'v1/institutions/room',
+  			//28立即评价
+  			confirmEvaluat_url:'v1/institutions/comment',
+  			//23根据城市名获取在地图上的分布位置
+			getMapMarker_url:'v1/institutions/institutions_map',
+			//31获取老人信息
+			getOlder_url:'v1/elder/update',
+			 //26获取订单Id
+  			getOrderId_url:'v1/user/order',
+		}
+});

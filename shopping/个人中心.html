@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人中心</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+  	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+  	<link rel="stylesheet" type="text/css" href="./plugins/jqueryweui/jquery-weui.css">
+  	<link rel="stylesheet" type="text/css" href="./plugins/jqueryweui/weui.css">
+  	<link rel="stylesheet" type="text/css" href="./plugins/swiper/css/swiper.min.css">
+	<script type="text/javascript" src="./js/commonJs/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="./plugins/swiper/js/swiper.js"></script>
+	<script type="text/javascript" src="./plugins/jqueryweui/jquery-weui.js"></script>
+	<script type="text/javascript" src="./js/commonJs/flexible_css.js"></script>
+	<script type="text/javascript" src="./js/commonJs/flexible.js"></script>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<script type="text/javascript" src="./js/commonJs/vue.js"></script>
+	<script type="text/javascript" src="./js/commonJs/sea.js"></script>
+	<script type="text/javascript" src="./js/configJs/seaConfig.js"></script>
+
+</head>
+<body >
+	<div id="body"  v-if="show">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div v-cloak v-for="item in swiper"  v-on:click="to(item.url)" class="swiper-slide">
+						<img style="width:100%" :src="img+item.image_m">
+				</div>
+				
+			</div>
+		</div>
+		<h2 v-cloak>{{a}}</h2>
+		<h2 v-cloak>{{b}}</h2>
+		<ul>
+				<li  v-cloak v-for="item in beadhouse" v-on:click="alert">{{item.address}}</li>
+		</ul>
+		<h3 v-cloak>{{filter}}</h3>
+		<button >dd</button>
+		<h1 id="h1"></h1>
+		<a href="http:baidu.com">baidu</a>
+	</div>
+	<script type="text/javascript" src="./js/pageJs/index/index.js"></script>
+</body>
+</html>

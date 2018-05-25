@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>订单详情</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+  	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+  	<link rel="stylesheet" type="text/css" href="./plugins/jqueryweui/jquery-weui.css">
+  	<link rel="stylesheet" type="text/css" href="./plugins/jqueryweui/weui.css">
+  	<link rel="stylesheet" type="text/css" href="./plugins/swiper/css/swiper.min.css">
+	<script type="text/javascript" src="./js/commonJs/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="./plugins/swiper/js/swiper.js"></script>
+	<script type="text/javascript" src="./plugins/jqueryweui/jquery-weui.js"></script>
+	<script type="text/javascript" src="./js/commonJs/flexible_css.js"></script>
+	<script type="text/javascript" src="./js/commonJs/flexible.js"></script>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<script type="text/javascript" src="./js/commonJs/vue.js"></script>
+	<script type="text/javascript" src="./js/commonJs/sea.js"></script>
+	<script type="text/javascript" src="./js/configJs/seaConfig.js"></script>
+</head>
+<body class="order_detail_body">
+	<div class="order_detail_box ">
+		<div class="order_status_info">
+			<p class="item no_top_line">
+				<span>订单编号：290491848522</span>
+			</p>
+			<p class="item clearfix">
+				<span class="f-l">下单时间：2018-01-03  13:00</span>
+				<!-- <span class="f-r status">已完成</span> -->
+				<span class="f-r status">订单已提交</span>
+			</p>
+			<p class="item">
+				<span>收货时间：2018-01-08  13:00</span>
+			</p>
+		</div>
+		<div class="com_order_box ">
+			<div class="address_detail clearfix">
+				<div class="f-l left ">
+					<p class="nth_child_1"><span>宋先生</span><span>17600117843</span></p>
+					<p class="nth_child_2 ellipsis">北京市朝阳区大望路soho现代城5号楼2601</p>
+				</div>
+				<div class="f-l arraw"></div>
+			</div>
+			<ul class="goods_list">
+				<li class="item">
+					<dl class="clearfix">
+						<dt class="f-l img_box">
+							<img src="./images/img/7.png" class="img_flex">
+						</dt>
+						<dd class="f-l">
+							<p class="nth_child_1 ellipsis">冲锋衣女韩版bf原宿三合一可拆卸冬季加绒加厚冲锋衣</p>
+							<p class="nth_child_2 clearfix" >
+								<span class="f-l  price price_color"><b>¥</b>399.00</span>
+								<span class="f-r num">数量：1</span>
+							</p>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			<div class="total_pay_info">
+				<p class="item clearfix">
+					<span class="f-l nth_child_1">商品金额</span>
+					<span class="f-r nth_child_2">￥399.00</span>
+				</p>
+				<p class="item clearfix">
+					<span class="f-l nth_child_1">运费</span>
+					<span class="f-r nth_child_3">0</span>
+				</p>
+				<p class="item clearfix no_bottom">
+					<span class="f-l nth_child_1">实付金额</span>
+					<span class="f-r nth_child_2">￥399.00</span>
+				</p>
+			</div>
+		</div>
+		<div class="express_info">
+			<p>快递公司：顺丰速运</p>
+			<p>物流单号：2387896452146877</p>
+		</div>
+		<!-- 订单取消 -->
+		<div class="cancel_order_box" style="display:none">
+			<p class="cancel_btn">取消订单</p>
+			<p class="tip">* 订单提交15分钟内可取消订单</p>
+		</div>
+		<!-- 确认收货 -->
+		<div class="cancel_order_box confirm_box" >
+			<p class="confirm_btn">确认收货</p>
+			<p class="tip">* 7天内系统自动收货</p>
+		</div>
+	</div>
+<!-- 	<script type="text/javascript" src="./js/pageJs/index/index.js"></script> -->
+</body>
+</html>

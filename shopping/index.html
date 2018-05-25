@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首页</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+  	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  	<!-- <link rel="stylesheet" type="text/css" href="./plugins/jqueryweui/jquery-weui.css">
+  	<link rel="stylesheet" type="text/css" href="./plugins/jqueryweui/weui.css"> -->
+  	<link rel="stylesheet" type="text/css" href="./plugins/swiper/css/swiper.min.css">
+	<script type="text/javascript" src="./js/commonJs/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="./plugins/swiper/js/swiper.js"></script>
+	<script type="text/javascript" src="./plugins/jqueryweui/jquery-weui.js"></script>
+	<script type="text/javascript" src="./js/commonJs/flexible_css.js"></script>
+	<script type="text/javascript" src="./js/commonJs/flexible.js"></script>
+	<script type="text/javascript" src="./js/commonJs/vue.js"></script>
+	<!-- <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<script type="text/javascript" src="./js/commonJs/vue.js"></script>
+	<script type="text/javascript" src="./js/commonJs/sea.js"></script>
+	<script type="text/javascript" src="./js/configJs/seaConfig.js"></script> -->
+
+</head>
+<!-- https://chenbingweb.github.io/QTC-LC/. -->
+<body class="shopping_body">
+	<audio  style="display:none" loop="loop" controls  id="audio" autoplay="autoplay" src="http://up.mcyt.net/?down/47043.mp3"></audio>
+	<div class="shopping_box" >
+		<div class="swiper-container" id="swiper-container">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide relative">
+							<h2 class="jian_jie">公司简介</h2>
+							<div class="company_info" >
+									<img src="./images/c1.jpg" class="com_img " id="cm_1"><span id="cn_1">固安鸿远机械公司成立于2003年，坐落于河北省廊坊市，专业生产氮气弹簧法兰，冲压模具标准件定位板，锥形定位器，提升器，卸料螺钉等产品的厂家，公司发展稳步持续上升，现在已是尚有规模的氮气弹簧法兰，及定位板的生产厂家。</span>
+							</div>
+								<div class="company_info_2"  >
+									<div class="it_box">
+											<p>主营项目：</p>
+											<p class="it_1">♦氮气弹簧法兰</p>
+											<p class="it_1">♦锥形定位器</p>
+											<p class="it_1">♦提升器</p>
+											<p class="it_1">♦卸料螺钉</p>
+									</div>
+										<img id="cm_2" src="./images/6.jpg" style="width:5.4rem" class="com_img" >
+							</div>
+							<div class="company_info_3" >
+									<p>企业文化及愿景：</p>
+									<p class="qywh" style="color:white">持续以百米的速度跑马拉松，只争朝夕，创御未来！</p>
+							</div>
+								<img class="down_btn" src="./images/down_la.png">
+					</li>
+					<li class="swiper-slide relative">
+							<!-- logo -->
+							<div class="header_box ">
+								<img src="./images/icon.jpg" id="logo"  class="logo">
+								<div class="padding_10">
+									<h2 class="name">侯力增</h2>
+							       <h2 class="c_name" id="company_name">固安县鸿远机械厂</h2>
+							       <h2  class="enlish_name">Gu'an County HongyuanMachinery Factory</h2>
+							   </div>
+							</div>
+							
+							<!-- 联系方式 -->
+							<div class="connect">
+									<h2 class="item  ">联系电话:13784464158</h2>
+									<h2 class="item  ">邮箱:1742218255@qq.com</h2>
+								<!-- 	<h2 class="item  ">QQ:50196742 </h2> -->
+									<h2 class="item  ">单位地址：</h2>
+									<h2 class="item  ">河北省廊坊市固安县牛驼镇工业园区</h2>
+								<!-- 	<h2 class="item  ">一工厂地址：</h2>
+									<h2 class="item  ">河北省廊坊市固安县柳泉镇开发区</h2>
+									<h2 class="item  ">二工厂地址：</h2>
+									<h2 class="item  ">江苏省徐州市贾汪区工业开发区徐轮路</h2> -->
+									<!-- <h2 class="item item_6">一工厂地址：河北省廊坊市固安县柳泉镇开发区</h2>
+									<h2 class="item item_7">二工厂地址：江苏省徐州市贾汪区工业开发区徐轮路</h2> -->
+							</div>
+							<div class="code_img">
+								<h2 class="add_me" style="color:white">加我微信</h2>
+								<img src="./images/qcode.jpg" id="qcode">
+								<h2 class="add_me_tip" style="color:white">长按识别二维码</h2>
+							</div>
+							<img class="down_btn" src="./images/down_la.png">
+						</li>
+					<!-- 产品展示 -->
+						<li class="swiper-slide relative">
+								<h2>我们的产品</h2>
+								<div class="pro_box" id="page3">
+										<div class="p_img_box">
+												<img src="./images/1.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/2.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/3.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/4.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/5.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/6.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/7.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/8.jpg" class="p_img_item">
+										</div>
+								</div>
+								<img class="down_btn" src="./images/down_la.png">
+						</li>
+						<li class="swiper-slide relative">
+								<h2>我们的产品</h2>
+								<div class="pro_box" id="page4">
+										<div class="p_img_box">
+												<img src="./images/9.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/10.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/11.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/12.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/13.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/14.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/15.jpg" class="p_img_item">
+										</div>
+										<div class="p_img_box">
+												<img src="./images/16.jpg" class="p_img_item">
+										</div>
+								</div>
+						</li>
+				</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript">
+  				function audioAutoPlay() {
+				        var audio = document.getElementById('audio');
+				            audio.play();
+				    }
+			window.onload=function(){
+				    $('#cm_1').animateCss('tada',function(){
+				    	$('#cm_2').animateCss('tada')
+				    })
+				document.addEventListener('touchstart', function () {
+				  
+				    audioAutoPlay();
+
+				});
+
+			
+				  new Swiper('#swiper-container', {
+						loop: false,
+						autoplay: 0,
+						speed:500,
+						direction:'vertical',
+						autoplayDisableOnInteraction : false ,   /* 注意此参数，默认为true */ 
+						observer: true, // 修改swiper自己或子元素时，自动初始化swiper
+						observeParents: true,   // 修改swiper父元素时，自动初始化swiper
+						onSlideChangeStart: function(swiper){
+     
+     						$('#page4').find('.p_img_box').each(function(index,item){
+      								$(item).css('opacity','0');
+      										
+      								})
+     						$('#page3').find('.p_img_box').each(function(index,item){
+      								$(item).css('opacity','0');
+      										
+      								})
+   						 },
+						onSlideChangeEnd: function(swiper){
+							console.log(swiper.snapIndex)
+
+      						if(swiper.snapIndex==1)
+      						{
+      							$('#logo').animateCss('bounce');
+      							$('#qcode').animateCss('shake');
+      							$("#company_name").animateCss('jello');
+      							$(".name").animateCss('jello');
+      							$(".enlish_name").animateCss('jello');
+      							$(".add_me").animateCss('bounceInLeft');
+      							$(".add_me_tip").animateCss('bounceInLeft')
+      							$('.connect').find('.item').each(function(index,item){
+      								setTimeout(function(){
+      								$(item).addClass('item_'+(index+1))
+      										
+      								},500+(index*20))
+      								$(item).animateCss('rubberBand')
+      							})
+      						}
+      						else
+      						{
+      							$('.connect').find('.item').each(function(index,item){
+   
+      									$(item).removeClass('item_'+(index+1))
+    				
+      								
+      							})
+      							
+      						}
+      						if(swiper.snapIndex==0)
+      						{
+      							$('#cm_1').animateCss('rotateInDownLeft').css('opacity','1');;
+      							$('#cm_2').animateCss('rotateInDownRight').css('opacity','1');;
+      							$("#cn_1").animateCss('pulse');
+   								$("#cn_2").animateCss('pulse');
+   								$('.qywh').animateCss('tada');
+   								$('.it_box').find('.it_1').each(function(index,item){
+   									setTimeout(function(){
+   										$(item).animateCss('bounce')
+   									},500+index*400)
+   										
+   									
+   								})
+      						}
+      						if(swiper.snapIndex==2)
+      						{
+      							console.log($('#page3').find('.p_img_box'))
+      								$('#page3').find('.p_img_box').each(function(index,item){
+      									console.log(item)
+      									setTimeout(function(){
+      										$(item).animateCss('rollIn').css('opacity','1');
+      									},500+(index*340))
+      										
+      								})
+      						}
+      							if(swiper.snapIndex==3)
+      						{
+      								$('#page4').find('.p_img_box').each(function(index,item){
+      									console.log(item)
+      									setTimeout(function(){
+      										$(item).animateCss('rollIn').css('opacity','1');
+      									},500+(index*340))
+      										
+      								})
+      						}
+      						
+
+    					}
+					})
+				 $('.down_btn').animateCss('bounce');
+
+			$('#logo').animateCss('bounce');
+      							$('#qcode').animateCss('shake');
+      							$("#company_name").animateCss('jello');
+      							$(".name").animateCss('jello');
+      							$(".enlish_name").animateCss('jello');
+      							$(".add_me").animateCss('bounceInLeft');
+      							$(".add_me_tip").animateCss('bounceInLeft')
+      							$('.connect').find('.item').each(function(index,item){
+      								setTimeout(function(){
+      								$(item).addClass('item_'+(index+1))
+      							
+      								},500+(index*20))
+      								
+      							})
+			}
+
+
+	</script>
+	<!-- <script type="text/javascript" src="./js/pageJs/index/index.js"></script> -->
+</body>
+</html>

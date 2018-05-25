@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>购物车</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+  	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+  	<link rel="stylesheet" type="text/css" href="./plugins/jqueryweui/jquery-weui.css">
+  	<link rel="stylesheet" type="text/css" href="./plugins/jqueryweui/weui.css">
+  	<link rel="stylesheet" type="text/css" href="./plugins/swiper/css/swiper.min.css">
+	<script type="text/javascript" src="./js/commonJs/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="./plugins/swiper/js/swiper.js"></script>
+	<script type="text/javascript" src="./plugins/jqueryweui/jquery-weui.js"></script>
+	<script type="text/javascript" src="./js/commonJs/flexible_css.js"></script>
+	<script type="text/javascript" src="./js/commonJs/flexible.js"></script>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<script type="text/javascript" src="./js/commonJs/vue.js"></script>
+	<script type="text/javascript" src="./js/commonJs/sea.js"></script>
+	<script type="text/javascript" src="./js/configJs/seaConfig.js"></script>
+
+</head>
+<body class="cart_body">
+	<div>
+		<div class="goods_list">
+			<ul class="ul">
+				<li class="item">
+					<dl class="clearfix">
+						<dt class="f-l">
+							<input id="a" type="checkbox" >
+							<label for="a" class="f-l"></label>
+							<div class="f-l img_box">
+								<img src="./images/img/1.png" class="img_flex">
+							</div>
+						</dt>
+						<dd class="f-l">
+							<p class="title one_line">户外秋冬款冲锋衣御寒</p>
+							<p class="price"><b>¥</b>399.00</p>
+							<p class="nth_child_3 clearfix">
+									<span class="f-l reduce active" ></span>
+									<span class="f-l num">1</span>
+									<span class="f-l add active"></span>
+							</p>
+						</dd>
+					</dl>
+				</li>
+				
+
+			</ul>
+			<!-- <span>暂无商品</span> -->
+		</div>
+		<div class="goods_buy clearfix">
+				<div class="f-l">
+					<input id="all" type="checkbox" >
+					<label for="all" class="all">全选</label>
+				</div>
+				<div class="f-l delete">
+						<u>删除</u>
+				</div>
+				<div class="f-l total ">
+					<span>合计：</span>
+					<span class="price"><b>¥</b>88</span>
+				</div>
+				<div class="f-r pay">去结算</div>
+		</div>
+		<div class="footer_nav clearfix">
+			<a href="./index.html" class="f-l index ">首页</a>
+			<a href="./classify.html" class="f-l classify ">分类</a>
+			<a href="./myShoppingCart.html" class="f-l shopping active">购物车</a>
+			<a href="./myOrder.html" class="f-l order ">订单</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		for(var i=0;i<9;i++){
+			$('.ul').append(`<li class="item">
+					<dl class="clearfix">
+						<dt class="f-l">
+							<input id="a_${i}" type="checkbox" >
+							<label for="a_${i}" class="f-l"></label>
+							<div class="f-l img_box">
+								<img src="./images/img/1.png" class="img_flex">
+							</div>
+						</dt>
+						<dd class="f-l">
+							<p class="title one_line">户外秋冬款冲锋衣御寒</p>
+							<p class="price"><b>¥</b>399.00</p>
+							<p class="nth_child_3 clearfix">
+									<span class="f-l reduce " ></span>
+									<span class="f-l num">1</span>
+									<span class="f-l add active"></span>
+							</p>
+						</dd>
+					</dl>
+				</li>`)
+		}
+	</script>
+<!-- 	<script type="text/javascript" src="./js/pageJs/index/index.js"></script> -->
+</body>
+</html>
